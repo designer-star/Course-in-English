@@ -1,0 +1,64 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin-top: 100px;
+    margin-left:  155px;
+    button{
+        animation-duration: 3.4s;
+        margin: 10px 0 25px 0;
+        width: 250px;
+        &:nth-child(2){
+            animation-duration: 3.6s;
+            margin-top: 0px;
+        }
+    }
+    .clear{
+        margin-top: -5px;
+    }
+    input{
+        outline: none;
+        animation-duration: 1s;
+        background-color: rgba(53, 14, 14, 0);
+        border: 1px solid rgb(179, 140, 35);
+        color: white;
+        margin-bottom: 20px;
+        height: 25px;
+        border-radius: 10px;
+        padding-left: 8px;
+        &:nth-child(2){
+            animation-duration: 2s;
+        }
+        &:nth-child(3){
+            animation-duration: 3s;
+        }
+        &:hover{
+            box-shadow: 0 2px 24px rgb(214, 183, 44);
+        }
+    }
+    .error{
+        font-size: 15px;
+        margin-top: -7px;
+        margin-bottom: 9px;
+        border:1px solid red;
+        box-shadow: 3px 3px 5px red;
+    }
+    label.error{
+        color: white;
+        margin-left: 10px;
+        margin-right: 5px;
+        border:none;
+        box-shadow: none;
+    }
+
+    
+}
+#consultation{
+    display: none;
+}
+#thanks{
+    display: none;
+    font-size: 35px;
+    text-align: center;
+    line-height: 35px;
+}

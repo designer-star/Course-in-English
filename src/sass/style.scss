@@ -1,0 +1,32 @@
+@import url("https://use.typekit.net/uly2abl.css");
+@import 'base/animation';
+body {
+  background: center (center/cover) no-repeat;
+  background-image: url("../img/header/bacground.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+* {
+    box-sizing: border-box;
+  }
+
+@import 'blocks/header';
+@import 'blocks/first_window';
+@import 'blocks/buttons';
+@import 'blocks/titles';
+@import 'blocks/second_window';
+@import 'blocks/third';
+@import 'blocks/teacher';
+@import 'blocks/price';
+@import 'blocks/carosel';
+@import 'blocks/order';
+@import 'blocks/contacts';
+@import 'blocks/forms';
+@import 'blocks/overlay';
+@import 'base/media';
+.container{
+
+    /* position: relative; */
+    width: 1200px;
+    margin: 0 auto;
+}

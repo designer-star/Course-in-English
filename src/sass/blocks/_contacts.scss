@@ -1,0 +1,97 @@
+.contacts{
+    padding: 100px 0 50px 0;
+    .info{
+        height: 450px;
+    }
+    &_wrapper{
+        position: relative;
+        display: inline-block;
+        margin: 80px 0 0 200px;
+        top: -55px;
+        font-family: cormorant-garamond, serif;
+        font-weight: 300;
+        font-style: italic;
+        font-size: 27px;
+        color: rgb(255, 255, 255);
+        a{
+            color: rgb(214, 183, 44);
+            text-decoration: none;
+        }
+        .name{
+            margin-bottom: 50px;
+            margin-top: 50px;
+        }
+        
+
+        /* display: block;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; */
+    }
+    iframe{
+        border-radius: 23px;
+        &:hover{
+            border: 3px solid rgb(179, 140, 35);
+            box-shadow: 0 2px 24px rgb(214, 183, 44);
+        }
+    }
+    .map{
+        display: inline-block;
+        position: relative;
+        margin: 0px 0 0 260px;
+        padding-top: 87px;
+        left: 60px;
+        
+    }
+    @media ( max-width: 767px ){
+        .map{
+            left: 0;
+            margin: -75px 0px 0 300px;
+            display: block;
+            iframe{
+                width: 600px;
+                height: 500px;
+            }
+        }
+        
+    }
+    .soocial{
+        width: 300px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .link{
+        transition: 1s all;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        background-color: rgb(175, 153, 30);
+        box-shadow: 0 2px 24px rgb(214, 183, 44);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        &:hover{
+            background-color: rgb(255, 255, 255);
+            color: rgb(175, 153, 30);
+        }
+    }
+}
+.up{
+
+    display: block;
+    display: none;
+    position: fixed;
+    width: 90px;
+    bottom: 40px;
+    right: 40px;
+    img{
+        width: 100%;
+        animation: shakingup 1s ease infinite;
+        animation-delay: 2s;
+    }
+}

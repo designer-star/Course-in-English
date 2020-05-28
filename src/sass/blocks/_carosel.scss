@@ -1,0 +1,93 @@
+.about{
+    padding: 100px 0 0 0;
+}
+.carusel_slider{
+    position: relative;
+    width: 750px;
+    margin: 50px auto 20px;
+    padding: 50px 0 0 0;
+    .responsiwe{
+        width: 200px;
+
+    }
+    img{
+        width: 190px;
+        border-radius: 100px;
+        display: block;
+        margin: 0 auto;
+    }
+    .name{
+        font-family: trajan-color,serif;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 4.7px;
+        color: rgb(255, 255, 255);
+        margin-top: 30px;
+        font-size: 25px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .desr{
+        font-family: cormorant-garamond, serif;
+        font-weight: 300;
+        font-style: italic;
+        color: rgb(255, 255, 255);
+        display: block;
+        margin: 0 auto;
+        width: 700px;
+        font-size: 20px;
+        margin-top: 40px;
+        text-align: center;
+    }
+    
+}
+.slick-prev, .slick-next{
+    /* display: grid; */
+    position: relative;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    img{
+        width: 70px;
+        &:hover{
+           /*  width: 50px; */
+           box-shadow: 0 2px 24px rgb(214, 183, 44);
+        }
+    }
+}
+.slick-next{
+    right: -980px;
+    top: -130px;
+    
+    
+}
+.slick-prev{
+    left: 45px;
+    top: -130px;
+    transform:rotate(180deg);
+}
+.tns-nav{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    button{
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        width: 10px;
+        height: 3px;
+        margin-right: 5px;
+        margin-left: 5px;
+        border: none;
+        &:hover{
+            width: 12px;
+            height: 5px;
+        }
+    }
+    .tns-nav-active{
+        width: 12px;
+        height: 5px;
+        background-color:  gold;
+        
+    }
+}

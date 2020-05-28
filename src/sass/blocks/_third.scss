@@ -1,0 +1,21 @@
+.third{
+    min-height: 920px;
+    padding: 100px 0;
+    /* background: url(../../src/img/second_window/bacground1.jpg); */
+    &_video{
+        margin:160px 0;
+        display: flex;
+        justify-content: space-between;
+        iframe{
+            border-radius: 40px;
+            animation-duration: 2s;
+            &:hover{
+                border: 3px solid rgb(179, 140, 35);
+    /* border: 2px solid rgba(214, 183, 44, 0.6); */
+                box-shadow: 0 2px 24px rgb(214, 183, 44);
+               /*  border: 3px solid red;
+                box-shadow: 3px 3px 20px red; */
+            }
+        }
+    }
+}

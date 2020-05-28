@@ -1,0 +1,62 @@
+.teachers{
+    padding:0 0 120px 0 ;
+    &_descr{
+        font-family: cormorant-garamond, serif;
+        font-weight: 300;
+        font-style: italic;
+        padding-top: 30px;
+        color: rgb(255, 255, 255);
+        margin: 0 auto;
+        text-align: center;
+        font-size: 36px;
+        width: 700px;
+    }
+    &_items{
+        padding-top: 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &_item{
+        
+        transition: 0.8s all;
+        border-radius: 10px;
+        animation-duration: 2s;
+        width: 300px;
+        height: 400px;
+        text-align: center;
+        border: 1px solid white;
+        .img{
+            transition: 0.8s all;
+            width: 218px;
+            height: 165px;
+            border-radius: 100px;
+            margin-top: 50px;
+        }
+        &:hover{
+            /* width: 310px; */
+            background-color: rgba(0, 0, 0 , 0.8) ;
+            border: 1px solid rgb(179, 140, 35);
+    /* border: 2px solid rgba(214, 183, 44, 0.6); */
+            box-shadow: 0 2px 24px rgb(214, 183, 44);
+        }
+    }
+    &_name{
+        font-family: trajan-color,serif;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 4.7px;
+        color: rgb(255, 255, 255);
+        margin-top: 30px;
+        font-size: 25px;
+        font-weight: 700;
+    }
+    &_descrit{
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        margin-top: 40px;
+        font-family: cormorant-garamond, serif;
+        font-weight: 300;
+        font-style: italic;
+        /* letter-spacing: 5.7px; */
+    }
+}

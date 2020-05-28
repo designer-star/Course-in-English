@@ -1,0 +1,2 @@
+@media (max-width: 1200px){.hamburger{opacity:100;display:block;position:absolute;right:40px;top:8%;width:30px}.hamburger span{display:block;margin-top:5px;height:2px;width:100%;background-color:#ffffff;-webkit-transition:0.5s all;transition:0.5s all}.hamburger_active span{margin-bottom:-6px}.hamburger_active span:nth-child(1){-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.hamburger_active span:nth-child(2){display:none}.hamburger_active span:nth-child(3){-webkit-transform:rotate(45deg);transform:rotate(45deg)}}
+/*# sourceMappingURL=media.min.css.map */

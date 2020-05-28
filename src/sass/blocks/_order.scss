@@ -1,0 +1,53 @@
+.order{
+    padding: 100px 0 0 0;
+    .teachers_descr{
+        color: rgb(247, 247, 247);
+        span{
+            color: rgb(214, 183, 44);
+        }
+    }
+    /* .form{
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        margin-top: 100px;
+        margin-left:  155px;
+        button{
+            margin: 10px 0 25px 0;
+            width: 250px;
+            font-size: 15px;
+            &:nth-child(2){
+                margin-top: 0px;
+            }
+        }
+        .clear{
+            margin-top: -5px;
+        }
+        input{
+            margin-bottom: 20px;
+            height: 25px;
+            border-radius: 10px;
+            padding-left: 8px;
+        }
+        .error{
+            font-size: 15px;
+            margin-top: -7px;
+            margin-bottom: 9px;
+            border:1px solid red;
+        }
+        label.error{
+            margin-left: 10px;
+            margin-right: 5px;
+            border:none;
+        }
+        
+    } */
+    img{
+        animation: shaking 1s ease infinite;
+        position: relative;
+        width: 200px;
+        right: -704px;
+        top: -210px;
+    }
+    
+}

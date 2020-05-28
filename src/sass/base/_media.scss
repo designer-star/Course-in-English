@@ -1,0 +1,268 @@
+@media ( max-width: 1200px ){
+    .menu{
+        flex-direction: column;
+        position: fixed;
+        justify-content: space-between;
+        align-content: center;
+        top: 0;
+        left: -100%;
+        width: 18%;
+        height: 100%;
+        padding: 20px 15px;
+        
+        background-color: rgba(0,0,0, .4);
+        transition: 0.8s all;
+        &_active{
+            left: 0;
+        }     
+        &_link{
+            font-size: 20px;
+            padding-left: 40px;
+        }   
+        &_item{
+            padding-right: 0px;
+            border: none;
+            margin-top: 40px;
+            font-size: 20px;
+        }
+           
+    }
+    
+    .hamburger{
+        opacity: 100;
+        display: block;
+        position: relative;
+        right: -1099px;
+        top: 39px;
+        width: 50px;
+        span{
+            display: block;
+            margin-top: 7px;
+            height: 4px;
+            width: 100%;
+            background-color:  rgb(214, 183, 44);
+            transition: 0.5s all;
+        }    
+        &_active{
+            span{
+                margin-bottom: -6px;
+                &:nth-child(1){
+                    transform: rotate(-45deg);
+                }  
+                &:nth-child(2){
+                    display: none;
+                }    
+                &:nth-child(3){
+                    transform: rotate(45deg);
+                }
+                    
+            }
+           
+        }
+           
+    }
+    .third_video{
+        iframe{
+            margin:0 80px;
+        }
+        
+    }
+    .teachers_item{
+        margin:0 50px;
+    }
+    .price_item{
+        margin:0 50px;
+    }
+    .slick-prev, .slick-next{
+        display: none;
+    }
+    .carusel_slider {
+        .desr{
+            width: 500px;
+            font-size: 30px;
+        }
+        .name{
+            font-size: 60px;
+        }
+        img{
+            width: 300px;
+        }
+    }
+
+
+}
+@media ( max-width: 991px ){
+
+}
+@media ( max-width: 767px ){
+    .title{
+        font-size: 70px;
+    }
+    h1{
+        font-size: 60px;
+    }
+    .first_window{
+        ul{
+            font-size: 31px;
+            line-height: 55px;
+        }
+        &_name{
+            right: -100px;
+            top: -87px;
+            font-size: 31px;
+        }
+        &_list{
+            margin-left: 100px;
+        }
+        &_descr{
+            font-size: 27px;
+        }
+    }
+   
+    .second_window_ithem{
+        width: 450px;
+        position: static;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+        padding-top: 150px;
+         &_1{
+            top: -250px;
+            left: 50%;
+            transform: translateX(0%);
+        }
+        .second_window_title{
+            font-size: 50px;
+        }
+        .second_window_descr{
+            font-size: 34px;
+        }
+        img{
+            width: 150px;
+            height: 110px;
+        }
+    }
+    .third_video{
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+        
+        iframe{
+            
+            margin:80px 80px;
+            width: 700px;
+            height: 500px;
+        }
+    }
+    .teachers_items{
+        flex-direction: column;
+        align-items: center;
+        
+        .teachers_item{
+            margin:50px 50px;
+            width: 700px;
+            height: 250px;
+            text-align: left;
+            .img{
+                display: inline-block;
+                text-align: left;
+                margin-top: 30px;
+            }
+            .teachers_name{
+                position: absolute;
+                margin-left: 80px;
+                margin-top: 44px;
+                display: inline-block;
+                font-size: 35px;
+            }
+            .teachers_descrit{
+                display: inline-block;
+                position: absolute;
+                width: 400px;
+                margin-top: 125px;
+                margin-left: 40px;
+                font-size: 30px;
+            }
+        }
+    }
+    .price_items{
+        flex-direction: column;
+        align-items: center;
+        .price_item{
+            margin:50px 50px;
+            width: 700px;
+            height: 400px;
+            text-align: left;
+            .name{
+                width: 300px;
+                position: absolute;
+                margin-left: 80px;
+                margin-top: 65px;
+                display: inline-block;
+                font-size: 35px;
+                text-align: center;
+
+            }
+            .descr{
+                display: inline-block;
+                position: absolute;
+                width: 488px;
+                margin-top: 170px;
+                margin-left: 15px;
+                font-size: 33px;
+                text-align: left;
+            }
+            img{
+                width: 160px;
+                height: 130px;
+            }
+        }
+    }
+    .slick-prev, .slick-next{
+        display: none;
+    }
+    .carusel_slider {
+        .desr{
+            width: 500px;
+            font-size: 40px;
+        }
+        .name{
+            font-size: 60px;
+        }
+        img{
+            width: 500px;
+        }
+    }
+    .form{
+        margin-left: 400px;
+        input{
+            height: 60px;
+            width: 400px;
+            margin-bottom: 40px;
+        }
+        button{
+            width: 400px;
+            height: 40px;
+            margin: 10px 0 40px 0;
+        }
+    }
+    .order img{
+        right: -840px;
+        top: -354px;
+    }
+    .contacts_wrapper{
+        font-size: 40px;
+        top: -40px;
+        left: 230px;
+    }
+    .map{
+        display: block;
+        left: -375px;
+        top: 330px;
+    }
+    
+    
+    
+}
