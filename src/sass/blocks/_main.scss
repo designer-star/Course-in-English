@@ -1,7 +1,6 @@
 
 .first_window{
     min-height: 920px;
-    /* background: url('../img/header/bacground.jpg') center (center / cover) no-repeat; */
     position: relative;
     padding-top: 0px;
     h1{
@@ -19,8 +18,6 @@
     }
     ul {
         list-style: none;
-        /* list-style-image: url('../img/header/list.jpg'); */
-
       }
     &_list{
         font-family: trajan-color,serif;
@@ -46,37 +43,19 @@
         text-transform: uppercase;
     }
     &_descr{
-        font-family: trajan-color,serif;
-        font-weight: 400;
-        font-style: normal;
-       /*  font-family: cormorant-garamond, serif;
+        font-family: cormorant-garamond, serif;
         font-weight: 300;
-        font-style: italic; */
+        font-style: italic;
         color: rgb(238, 238, 238);
         text-transform: none;
         margin: 0px auto;
         margin-top: 130px;
         width: 600px;
         text-align: center;
-        font-size: 17px;
+        font-size: 27px;
         span{
             color: rgb(214, 183, 44);
         }
     }
-    &_discount{
-        display: none;
-        width: 272px;
-        position: absolute;
-        right: 761px;
-        top: 585px;
-        /* animation: shaking 1s ease infinite; */
-    }
-
 }
-.first_window_list , .first_window_name , .first_window_descr , .first_window_discount , .buttons , h1 {
-    /* display: inline-block; */
-    /* margin: 0 0.5rem; */
-  
-    /* animation: bounce; */ /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 2s; /* don't forget to set a duration! */
-  }
+

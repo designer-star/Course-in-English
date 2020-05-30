@@ -1,4 +1,8 @@
 @media ( max-width: 1200px ){
+    body{
+        width: 100%;
+        margin: 0 auto;
+    }
     .menu{
         flex-direction: column;
         position: fixed;
@@ -236,7 +240,7 @@
         }
     }
     .form{
-        margin-left: 400px;
+        margin-left: -100px;
         input{
             height: 60px;
             width: 400px;

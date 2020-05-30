@@ -1,12 +1,3 @@
-$(document).ready(function(){
-    /* $('.carusel_slider').slick({
-        speed: 2200,
-        autoplay: true,
-        autoplaySpeed: 2000
-        
-      }); */
-      
-  });
   var slider = tns({
     container: '.carusel_slider',
     items: 1,

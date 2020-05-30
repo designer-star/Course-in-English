@@ -1,71 +1,3 @@
-.buttons{
-    position: relative;
-    outline: none;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 40px;
-    cursor: pointer;
-    /* border: none; */
-    border-radius: 20px;
-    margin: 100px auto 0;
-    opacity: 1;
-    background-color: rgb(255, 255, 255);
-    border: 2px solid rgba(96, 22, 126, 0.6);
-    box-shadow: 0 5px 5px rgb(96, 22, 126);
-    span{
-        color: rgba(22, 76, 167, 1);
-        font-size: 12px;
-        font-weight: 500;
-        letter-spacing: 0.7px;
-        }
-    &:hover {
-        animation: rotate 0.7s ease-in-out both;
-        span{
-            animation: storm 0.7s ease-in-out both;
-            animation-delay: 0.06s;
-        }
-    }
-    &:active {
-        background-color: #b91f1fd8;
-        box-shadow: 0 5px rgb(105, 15, 15);
-        transform: translateY(6px);
-        span{
-            color: rgb(151, 8, 8);
-        }
-    }
-    &_buy{
-        margin: 0 auto ;
-        width: 200px;
-        height: 30px;
-        font-size: 15px;
-        &:hover{
-          margin-left: 49px;
-        }
-    }
-    
-   /*  background-color: rgb(141, 37, 132);
-    cursor: pointer;
-    font-size: 25px;
-    box-shadow: 4px 4px  #999;
-    outline: none;
-    &:hover{
-        background-color: rgb(91, 179, 69);
-    }
-    &:active {
-        background-color: #3e8e41;
-        box-shadow: 0 5px #666;
-        transform: translateY(4px);
-    }
-    &_buy{
-        margin: 0 auto ;
-        width: 200px;
-        height: 30px;
-        font-size: 15px;
-    } */
-}
 .btn_header{
     position: relative;
     outline: none;
@@ -98,8 +30,6 @@
         letter-spacing: 8.7px;
         }
     &:hover{
-        /* border: 2px solid rgba(199, 46, 40, 0.6);
-        box-shadow: 0 6px 15px rgb(172, 52, 48); */
         width: 205px;
         height: 27px;
         span{
@@ -126,8 +56,6 @@
         font-size: 16px;
         letter-spacing: 8.7px;
         &:hover{
-            /* border: 2px solid rgba(199, 46, 40, 0.6);
-            box-shadow: 0 6px 15px rgb(172, 52, 48); */
             width: 255px;
             height: 27px;
         }
@@ -136,8 +64,6 @@
 }
 .te{
     &:hover{
-        /* border: 2px solid rgba(199, 46, 40, 0.6);
-        box-shadow: 0 6px 15px rgb(172, 52, 48); */
         width: 305px;
     }
 }

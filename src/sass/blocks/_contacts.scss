@@ -21,13 +21,6 @@
             margin-bottom: 50px;
             margin-top: 50px;
         }
-        
-
-        /* display: block;
-        width: 400px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between; */
     }
     iframe{
         border-radius: 23px;
@@ -79,19 +72,5 @@
             background-color: rgb(255, 255, 255);
             color: rgb(175, 153, 30);
         }
-    }
-}
-.up{
-
-    display: block;
-    display: none;
-    position: fixed;
-    width: 90px;
-    bottom: 40px;
-    right: 40px;
-    img{
-        width: 100%;
-        animation: shakingup 1s ease infinite;
-        animation-delay: 2s;
     }
 }

@@ -25,6 +25,9 @@
             font-weight: 700;
         }
         .descr{
+            font-family: cormorant-garamond, serif;
+            font-weight: 300;
+            font-style: italic;
             color: rgb(255, 255, 255);
             font-size: 20px;
             margin-top: 40px;
@@ -43,9 +46,6 @@
         }
         .last{
             padding: 0 30px;
-            font-family: cormorant-garamond, serif;
-            font-weight: 300;
-            font-style: italic;
         }
         button{
             position: absolute;
@@ -60,11 +60,8 @@
             margin-top: 20px;
         }
         &:hover{
-            /* width: 310px; */
             background-color: rgba(0, 0, 0 , 0.8) ;
-            color: rgb(255, 255, 255);
-            
-            /* border: 2px solid rgba(214, 183, 44, 0.6); */
+            color: rgb(255, 255, 255);          
             box-shadow: 0 2px 24px rgb(214, 183, 44);
             img{
                 transition: 0.8s all;

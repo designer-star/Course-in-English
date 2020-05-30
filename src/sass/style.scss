@@ -1,5 +1,6 @@
 @import url("https://use.typekit.net/uly2abl.css");
 @import 'base/animation';
+@import 'base/logo';
 body {
   background: center (center/cover) no-repeat;
   background-image: url("../img/header/bacground.jpg");
@@ -9,13 +10,17 @@ body {
 * {
     box-sizing: border-box;
   }
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
 
-@import 'blocks/header';
-@import 'blocks/first_window';
+@import 'blocks/menu';
+@import 'blocks/main';
 @import 'blocks/buttons';
 @import 'blocks/titles';
-@import 'blocks/second_window';
-@import 'blocks/third';
+@import 'blocks/why';
+@import 'blocks/how';
 @import 'blocks/teacher';
 @import 'blocks/price';
 @import 'blocks/carosel';
@@ -24,9 +29,3 @@ body {
 @import 'blocks/forms';
 @import 'blocks/overlay';
 @import 'base/media';
-.container{
-
-    /* position: relative; */
-    width: 1200px;
-    margin: 0 auto;
-}

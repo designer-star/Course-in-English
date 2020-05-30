@@ -42,7 +42,6 @@
     
 }
 .slick-prev, .slick-next{
-    /* display: grid; */
     position: relative;
     cursor: pointer;
     border: none;
@@ -51,16 +50,13 @@
     img{
         width: 70px;
         &:hover{
-           /*  width: 50px; */
            box-shadow: 0 2px 24px rgb(214, 183, 44);
         }
     }
 }
 .slick-next{
     right: -980px;
-    top: -130px;
-    
-    
+    top: -130px; 
 }
 .slick-prev{
     left: 45px;
@@ -88,6 +84,5 @@
         width: 12px;
         height: 5px;
         background-color:  gold;
-        
     }
 }
