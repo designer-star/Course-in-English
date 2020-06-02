@@ -2,11 +2,14 @@
     padding: 100px 0 50px 0;
     .info{
         height: 450px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     &_wrapper{
         position: relative;
         display: inline-block;
-        margin: 80px 0 0 200px;
+        margin: 80px 0 0 160px;
         top: -55px;
         font-family: cormorant-garamond, serif;
         font-weight: 300;
@@ -32,25 +35,22 @@
     .map{
         display: inline-block;
         position: relative;
-        margin: 0px 0 0 260px;
-        padding-top: 87px;
-        left: 60px;
         
     }
     @media ( max-width: 767px ){
         .map{
             left: 0;
-            margin: -75px 0px 0 300px;
+            margin: -75px 0px 0 0;
             display: block;
             iframe{
-                width: 600px;
-                height: 500px;
+                width: 90%;
+               min-height: 50%;
             }
         }
         
     }
     .soocial{
-        width: 300px;
+        width: 20%;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
@@ -72,5 +72,25 @@
             background-color: rgb(255, 255, 255);
             color: rgb(175, 153, 30);
         }
+    }
+}
+@media ( max-width: 1500px ){
+    .contacts{
+        .soocial{
+            width: 36%;
+            margin-top: 216px;
+        }
+    }
+    
+    .info{
+        flex-direction: column;
+    }
+    .contacts_wrapper{
+        margin: 50px auto;
+        margin-top: 100px;
+        text-align: center;
+    }
+    .logo .mine{
+        margin-top: 0px;
     }
 }

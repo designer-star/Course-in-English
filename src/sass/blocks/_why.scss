@@ -1,13 +1,20 @@
 
 .second_window{
-    min-height: 920px;
+    min-height: 100%;
     padding: 100px 0;
     .button{
-        margin-top: 121px;
+        margin-top: 740px;
+    }
+    .liner{
+        display: inline-block;
+        position: absolute;
+        margin-top: 400px;
+        margin-left: 30%;
+        transform: translateX(-50%);
     }
     .line{
         display: inline-block;
-        position: relative;
+        position: absolute;
         height: 300px;
         width: 3px;
         background-color: white;
@@ -15,21 +22,17 @@
         animation: background 1s infinite ;
         
         &_1{
+            top: -130px;
+            left: -75px;
             transform: rotate(30deg);
-            left: 522px;
-            top: 250px;
         }
         &_2{
-            top: 381px;
-            left: 49%;
-            transform: translateX(-50%);
             transform: rotate(270deg);
-           
         }
         &_3{
+            top: -130px;
+            left: 74px;
             transform: rotate(150deg);
-            right: -657px;
-            top: 252px;
         }
     }
     @media ( max-width: 767px ){
@@ -39,10 +42,10 @@
             height: 100px;
             &_1{
                 height: 1088px;
-                position: absolute;
+                position: relative;
                 transform: rotate(0deg);
-                left: 250px;
-                top: 1519px;
+                left: 10%;
+                top: -210px;
             }
             &_2{
                 display: none;
@@ -50,31 +53,49 @@
             }
             &_3{
                 height: 1088px;
-                position: absolute;
+                position: relative;
                 transform: rotate(0deg);
-                left: 940px;
-                top: 1519px;
+                right: 2685%;
+                top: -210px;
             }
         }
     }
     &_ithem{
         display: inline-block;
-        position: relative;
+        position: absolute;
         text-align: center;
         width: 250px;
         margin-bottom: 40px;
+        margin-top: 50px;
         &_1{
-            top: -250px;
             left: 50%;
             transform: translateX(-50%);
         }
         &_2{
-            top: 110px;
-            left: -80px;
+            margin-top: 450px;
+            left: 38%;
+            transform: translateX(-50%);
         }
         &_3{
-            top: 110px;
-            left: 279px;
+            margin-top: 450px;
+            left: 64%;
+            transform: translateX(-50%);
+        }
+    }
+    @media ( max-width: 2000px ){
+        .second_window_ithem_2{
+            left: 69%
+        }
+        .second_window_ithem_3{
+            left: 33%;
+        }
+    }
+    @media ( max-width: 1500px ){
+        .second_window_ithem_2{
+            left: 77%;
+        }
+        .second_window_ithem_3{
+            left: 23%;
         }
     }
     img{
@@ -104,4 +125,18 @@
         font-weight: 500;
         margin-top: 20px;
     }
+}
+@media ( max-width: 780px ){
+   /*  .second_window_ithem img{
+        width: 80%;
+    }
+    .second_window_ithem .second_window_title{
+        font-size: 32px;
+    }
+    .second_window_ithem .second_window_descr{
+        font-size: 20px;
+    }
+    .second_window .liner{
+        display: none;
+    } */
 }

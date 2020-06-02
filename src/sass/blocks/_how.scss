@@ -1,5 +1,5 @@
 .third{
-    min-height: 920px;
+    min-height: 100%;
     padding: 100px 0;
     &_video{
         margin:160px 0;
@@ -12,6 +12,25 @@
                 border: 3px solid rgb(179, 140, 35);
                 box-shadow: 0 2px 24px rgb(214, 183, 44);
             }
+        }
+    }
+}
+@media ( max-width: 1500px ){
+    .third_video{
+        margin:160px -100px;
+    }
+}
+@media ( max-width: 1200px ){
+    .third_video{
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+        
+        iframe{
+            
+            margin:80px 80px;
+            width: 100%;
+            height: 500px;
         }
     }
 }

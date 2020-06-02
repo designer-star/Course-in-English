@@ -36,7 +36,8 @@
         opacity: 100;
         display: block;
         position: relative;
-        right: -1099px;
+        left: 90%;
+
         top: 39px;
         width: 50px;
         span{
@@ -65,16 +66,12 @@
         }
            
     }
-    .third_video{
-        iframe{
-            margin:0 80px;
-        }
-        
-    }
     .teachers_item{
+        width: 50%;
         margin:0 50px;
     }
     .price_item{
+        width: 50%;
         margin:0 50px;
     }
     .slick-prev, .slick-next{
@@ -98,33 +95,34 @@
 @media ( max-width: 991px ){
 
 }
-@media ( max-width: 767px ){
+@media ( max-width: 768px ){
     .title{
-        font-size: 70px;
-    }
-    h1{
-        font-size: 60px;
+        font-size: 45px;
     }
     .first_window{
         ul{
-            font-size: 31px;
-            line-height: 55px;
+            font-size: 23px;
+            line-height: 41px;
         }
         &_name{
+            width: 100px;
             right: -100px;
             top: -87px;
-            font-size: 31px;
+            font-size: 23px;
         }
         &_list{
-            margin-left: 100px;
+            margin-left: 0px;
         }
         &_descr{
             font-size: 27px;
+            width: 435px;
         }
     }
-   
+    .second_window .button{
+        margin-top: 150px;
+    }
     .second_window_ithem{
-        width: 450px;
+        width: 80%;
         position: static;
         display: flex;
         justify-content: center;
@@ -134,6 +132,14 @@
         padding-top: 150px;
          &_1{
             top: -250px;
+            left: 50%;
+            transform: translateX(0%);
+        }
+        &_2{
+            left: 50%;
+            transform: translateX(0%);
+        }
+        &_3{
             left: 50%;
             transform: translateX(0%);
         }
@@ -156,25 +162,25 @@
         iframe{
             
             margin:80px 80px;
-            width: 700px;
-            height: 500px;
+            width: 80%;
+            height: 30%;
         }
     }
     .teachers_items{
-        flex-direction: column;
-        align-items: center;
+        /* flex-direction: column;
+        align-items: center; */
         
         .teachers_item{
             margin:50px 50px;
-            width: 700px;
-            height: 250px;
+            width: 100%;
+            min-height: 20%;
             text-align: left;
             .img{
                 display: inline-block;
                 text-align: left;
                 margin-top: 30px;
             }
-            .teachers_name{
+           /*  .teachers_name{
                 position: absolute;
                 margin-left: 80px;
                 margin-top: 44px;
@@ -184,11 +190,11 @@
             .teachers_descrit{
                 display: inline-block;
                 position: absolute;
-                width: 400px;
+                width: 327px;
                 margin-top: 125px;
                 margin-left: 40px;
                 font-size: 30px;
-            }
+            } */
         }
     }
     .price_items{
@@ -196,8 +202,8 @@
         align-items: center;
         .price_item{
             margin:50px 50px;
-            width: 700px;
-            height: 400px;
+            width: 100%;
+            /* min-height: 30%;
             text-align: left;
             .name{
                 width: 300px;
@@ -212,7 +218,7 @@
             .descr{
                 display: inline-block;
                 position: absolute;
-                width: 488px;
+                width: 425px;
                 margin-top: 170px;
                 margin-left: 15px;
                 font-size: 33px;
@@ -221,7 +227,7 @@
             img{
                 width: 160px;
                 height: 130px;
-            }
+            } */
         }
     }
     .slick-prev, .slick-next{
@@ -229,14 +235,14 @@
     }
     .carusel_slider {
         .desr{
-            width: 500px;
-            font-size: 40px;
+            width: 437px;
+            font-size: 28px;
         }
         .name{
-            font-size: 60px;
+            font-size: 45px;
         }
         img{
-            width: 500px;
+            width: 400px;
         }
     }
     .form{
@@ -259,7 +265,7 @@
     .contacts_wrapper{
         font-size: 40px;
         top: -40px;
-        left: 230px;
+        left: 0;
     }
     .map{
         display: block;
@@ -270,3 +276,212 @@
     
     
 }
+@media ( max-width: 780px ){
+    .first_window .wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .first_window{
+        ul{
+            font-size: 27px;
+            line-height: 46px;
+        }
+        &_name{
+            width: 100%;
+            text-align: center;
+            margin: 22% 0 0;
+            font-size: 28px;
+        }
+        &_list{
+            margin-left: 0px;
+        }
+        &_descr{
+            margin-top: 20%;
+            font-size: 27px;
+            width: 100%;
+        }
+    }
+}
+@media ( max-width: 780px ){
+    .first_window h1{
+        font-size: 36px;
+    }
+    .first_window_list{
+        margin-left: -150px;
+    }
+    .first_window ul{
+        font-size: 22px;
+        line-height: 34px;
+    }
+    .first_window .wrapper{
+        margin-top: 10%;
+    }
+    .first_window_name{
+        font-size: 19px;
+    }
+    .first_window_descr{
+        font-size: 17px;
+    }
+    .hamburger{
+        width: 10%;
+        span{
+            height: 2px;
+        }
+    }
+
+    .title{
+        font-size: 24px;
+    }
+
+    .second_window_ithem img{
+        width: 60%;
+        height: 30%;
+    }
+    .second_window_ithem .second_window_title{
+        font-size: 23px;
+    }
+    .second_window_ithem .second_window_descr{
+        font-size: 20px;
+    }
+    .second_window_ithem_1{
+        padding-top: 50px;
+    }
+    .second_window_ithem_2{
+        padding-top: 50px;
+    }
+    .second_window_ithem_3{
+        padding-top: 50px;
+    }
+    .second_window .button{
+        margin-top: 100px;
+        width: 200px;
+    }
+    .btn_header span{
+        font-size: 100%;
+    }
+    .first_window_list{
+        margin-left: 0px;
+    }
+    .second_window .liner{
+        display: none;
+    }
+
+    .third{
+        padding: 50px 0;
+    }
+    .third_video iframe{
+        margin: 54px 0;
+    }
+    .teachers{
+        padding: 50px 0;
+    }
+    .teachers_descr{
+        font-size: 23px;
+    }
+    .teachers_items{
+        padding-top: 50px;
+    }
+
+    .price{
+        padding: 50px 0;
+    }
+    .price_items{
+        margin-top: 50px;
+    }
+    .btn_header_buy{
+        width: 80%;
+    }
+    .carusel_slider img{
+        width: 100%;
+    }
+    .carusel_slider .name{
+        font-size: 26px;
+    }
+    .carusel_slider .desr{
+        width: 90%;
+        font-size: 20px;
+    }
+    .tns-nav{
+        margin-top: 10px;
+    }
+
+    .order .form input{
+        width: 100%;
+        
+    }
+    .order .form button{
+        width: 100%;      
+        margin-left: 50%;
+        transform: translateX(-50%);
+        font-size: 10px;
+       
+    }
+    .order .form input{
+        margin-left: 0;
+    }
+    .order .form{
+        width: 100%;
+        margin-left: 0%;
+        transform: translateX(0%);
+        margin-bottom: 50px ;
+    }
+    .contacts{
+        padding: 50px 0;
+    }
+    .contacts .soocial{
+        width: 100%;
+        margin-top: 40px;
+        
+    }
+    .contacts .map{
+        margin: -200px 0px 0 0;
+    }
+    .logo{
+        margin-top: 340px;
+    }
+    .up{
+        width: 12%;
+        bottom: 4%;
+        right: 0%;
+    }
+    .dropdown{
+        left: 5%;
+        top: 3%;
+    }
+    .hamburger{
+        left: 84%;
+        top: 20px;
+    }
+    .menu_link{
+        font-size: 17px;
+    }
+    .menu{
+        width: 55%;
+        background-color: rgba(0,0,0,0.7);
+    }
+    .order .form input{
+        margin-left: 50%;
+    }
+    .form input{
+        width: 90%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    .form button{
+        width: 90%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    .form_overlay{
+        margin-right: 0;
+    }
+    .overlay .modal__close{
+        right: -20px;
+    }
+    .form{
+        margin-left: 0;
+    }
+    
+}
+

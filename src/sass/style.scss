@@ -2,6 +2,7 @@
 @import 'base/animation';
 @import 'base/logo';
 body {
+  width: 100%;
   background: center (center/cover) no-repeat;
   background-image: url("../img/header/bacground.jpg");
   background-repeat: no-repeat;
@@ -11,7 +12,7 @@ body {
     box-sizing: border-box;
   }
 .container{
-    width: 1200px;
+    width: 60%;
     margin: 0 auto;
 }
 

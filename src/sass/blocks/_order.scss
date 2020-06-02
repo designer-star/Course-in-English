@@ -1,5 +1,11 @@
 .order{
+    height: 100%;
     padding: 100px 0 0 0;
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     .teachers_descr{
         color: rgb(247, 247, 247);
         span{
@@ -10,8 +16,43 @@
         animation: shaking 1s ease infinite;
         position: relative;
         width: 200px;
-        right: -704px;
-        top: -210px;
+        margin-right: 200px;
+        /* right: -704px;
+        top: -210px; */
     }
     
+}
+@media ( max-width: 1500px ){
+    .order{
+        .form{
+            margin: 125px auto;
+            input{
+                height: 60px;
+                width: 400px;
+                margin-bottom: 40px;
+            }
+            button{
+                width: 400px;
+                height: 40px;
+                margin: 10px 0 40px 0;
+            }
+        }
+    }
+    
+    .order img{
+        right: -85px;
+        top: 0px;
+    }
+}
+@media ( max-width: 933px ){
+    .order img{
+        display: none;
+    }
+    .order{
+        .form{
+            width: 400px;
+            /* margin: 0 0 0 80px; */
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }}
 }

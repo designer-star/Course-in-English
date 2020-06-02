@@ -1,6 +1,6 @@
 
 .first_window{
-    min-height: 920px;
+    min-height: 100%;
     position: relative;
     padding-top: 0px;
     h1{
@@ -13,8 +13,14 @@
     }
     @media ( max-width: 767px ){
         h1{
-            font-size: 66px;
+            font-size: 50px;
         }
+    }
+    .wrapper{
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     ul {
         list-style: none;
@@ -27,8 +33,6 @@
         color: rgb(238, 238, 238);
         display: inline-block;
         font-size: 18px;
-        padding-top: 90px;
-        margin-left: 148px;
     }
     &_name{
         font-family: trajan-color,serif;
@@ -36,9 +40,7 @@
         font-style: normal;
         color: rgb(238, 238, 238);
         display: inline-block;
-        position: relative;
-        right: -370px;
-        top: -60px;
+        margin-left: 20%;
         font-size: 24px;
         text-transform: uppercase;
     }
@@ -49,8 +51,8 @@
         color: rgb(238, 238, 238);
         text-transform: none;
         margin: 0px auto;
-        margin-top: 130px;
-        width: 600px;
+        margin-top: 170px;
+        width: 582px;
         text-align: center;
         font-size: 27px;
         span{
@@ -58,4 +60,19 @@
         }
     }
 }
-
+@media ( max-width: 969px ){
+    .first_window_descr{
+        width: 477px;
+    }
+}
+@media ( max-width: 1400px ){
+    .first_window{
+        &_list{
+            font-size: 16px;
+        }
+        &_name{
+            font-size: 19px;
+        }
+    }
+    
+}

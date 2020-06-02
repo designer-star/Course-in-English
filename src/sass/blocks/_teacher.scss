@@ -9,7 +9,7 @@
         margin: 0 auto;
         text-align: center;
         font-size: 36px;
-        width: 700px;
+        width: 40%;
     }
     &_items{
         padding-top: 100px;
@@ -17,20 +17,22 @@
         justify-content: space-between;
     }
     &_item{
-        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         transition: 0.8s all;
         border-radius: 10px;
         animation-duration: 2s;
-        width: 300px;
-        height: 400px;
+        width: 30%;
+        max-height: 900px;
         text-align: center;
         border: 1px solid white;
         .img{
             transition: 0.8s all;
-            width: 218px;
-            height: 165px;
+            width: 80%;
+            
             border-radius: 100px;
-            margin-top: 50px;
+            margin-top: 20%;
         }
         &:hover{
             background-color: rgba(0, 0, 0 , 0.8) ;
@@ -52,8 +54,23 @@
         color: rgb(255, 255, 255);
         font-size: 20px;
         margin-top: 40px;
+        margin-bottom: 20%;
         font-family: cormorant-garamond, serif;
         font-weight: 300;
         font-style: italic;
+        text-align: center;
         }
+}
+@media ( max-width: 1200px ){
+    .teachers_items{
+        flex-direction: column;
+        align-items: center;
+        .teachers_item{
+            margin:50px 50px;
+        }
+    }
+    .teachers_descr{
+        font-size: 34px;
+        width: 100%;
+    }
 }
