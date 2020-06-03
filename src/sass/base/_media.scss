@@ -118,40 +118,39 @@
             width: 435px;
         }
     }
-    .second_window .button{
-        margin-top: 150px;
+    .second_window_ithem .second_window_title{
+        font-size: 23px;
     }
-    .second_window_ithem{
-        width: 80%;
-        position: static;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin: 0 auto;
-        padding-top: 150px;
-         &_1{
-            top: -250px;
-            left: 50%;
-            transform: translateX(0%);
+    .second_window{
+        .button{
+        margin-top: 150px;
         }
-        &_2{
-            left: 50%;
-            transform: translateX(0%);
-        }
-        &_3{
-            left: 50%;
-            transform: translateX(0%);
-        }
-        .second_window_title{
-            font-size: 50px;
-        }
-        .second_window_descr{
-            font-size: 34px;
-        }
-        img{
-            width: 150px;
-            height: 110px;
+        &_ithem{
+            width: 80%;
+            position: static;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0 auto;
+            padding-top: 150px;
+             &_1{
+                top: -250px;
+                left: 50%;
+                transform: translateX(0%);
+            }
+            &_2{
+                left: 50%;
+                transform: translateX(0%);
+            }
+            &_3{
+                left: 50%;
+                transform: translateX(0%);
+            }
+            img{
+                width: 150px;
+                height: 110px;
+            }
         }
     }
     .third_video{
@@ -166,11 +165,8 @@
             height: 30%;
         }
     }
-    .teachers_items{
-        /* flex-direction: column;
-        align-items: center; */
-        
-        .teachers_item{
+    .teachers{
+        &_item{
             margin:50px 50px;
             width: 100%;
             min-height: 20%;
@@ -180,54 +176,16 @@
                 text-align: left;
                 margin-top: 30px;
             }
-           /*  .teachers_name{
-                position: absolute;
-                margin-left: 80px;
-                margin-top: 44px;
-                display: inline-block;
-                font-size: 35px;
-            }
-            .teachers_descrit{
-                display: inline-block;
-                position: absolute;
-                width: 327px;
-                margin-top: 125px;
-                margin-left: 40px;
-                font-size: 30px;
-            } */
         }
     }
-    .price_items{
-        flex-direction: column;
-        align-items: center;
-        .price_item{
+    .price{
+        &_items{
+            flex-direction: column;
+            align-items: center;
+        }
+        &_item{
             margin:50px 50px;
             width: 100%;
-            /* min-height: 30%;
-            text-align: left;
-            .name{
-                width: 300px;
-                position: absolute;
-                margin-left: 80px;
-                margin-top: 65px;
-                display: inline-block;
-                font-size: 35px;
-                text-align: center;
-
-            }
-            .descr{
-                display: inline-block;
-                position: absolute;
-                width: 425px;
-                margin-top: 170px;
-                margin-left: 15px;
-                font-size: 33px;
-                text-align: left;
-            }
-            img{
-                width: 160px;
-                height: 130px;
-            } */
         }
     }
     .slick-prev, .slick-next{
@@ -272,26 +230,30 @@
         left: -375px;
         top: 330px;
     }
-    
-    
+}
+@media ( max-width: 780px ){
     
 }
 @media ( max-width: 780px ){
-    .first_window .wrapper{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
     .first_window{
+        h1{
+            font-size: 36px;
+        }
+        .wrapper{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 10%;
+        }
         ul{
-            font-size: 27px;
-            line-height: 46px;
+            font-size: 22px;
+            line-height: 34px;
         }
         &_name{
             width: 100%;
             text-align: center;
             margin: 22% 0 0;
-            font-size: 28px;
+            font-size: 19px;
         }
         &_list{
             margin-left: 0px;
@@ -300,28 +262,8 @@
             margin-top: 20%;
             font-size: 27px;
             width: 100%;
+            font-size: 17px;
         }
-    }
-}
-@media ( max-width: 780px ){
-    .first_window h1{
-        font-size: 36px;
-    }
-    .first_window_list{
-        margin-left: -150px;
-    }
-    .first_window ul{
-        font-size: 22px;
-        line-height: 34px;
-    }
-    .first_window .wrapper{
-        margin-top: 10%;
-    }
-    .first_window_name{
-        font-size: 19px;
-    }
-    .first_window_descr{
-        font-size: 17px;
     }
     .hamburger{
         width: 10%;
@@ -333,109 +275,110 @@
     .title{
         font-size: 24px;
     }
-
-    .second_window_ithem img{
-        width: 60%;
-        height: 30%;
-    }
-    .second_window_ithem .second_window_title{
-        font-size: 23px;
-    }
-    .second_window_ithem .second_window_descr{
-        font-size: 20px;
-    }
-    .second_window_ithem_1{
-        padding-top: 50px;
-    }
-    .second_window_ithem_2{
-        padding-top: 50px;
-    }
-    .second_window_ithem_3{
-        padding-top: 50px;
-    }
-    .second_window .button{
-        margin-top: 100px;
-        width: 200px;
+    .second_window{
+        &_title{
+            font-size: 23px;
+        }
+        &_descr{
+            font-size: 20px;
+        }
+        &_ithem{
+             img{
+            width: 60%;
+            height: 30%;
+            }
+            &_1{
+                padding-top: 50px;
+            }
+            &_2{
+                padding-top: 50px;
+            }
+            &_3{
+                padding-top: 50px;
+            }
+        }
+        .button{
+            margin-top: 100px;
+            width: 200px;
+        }
+        .liner{
+            display: none;
+        }
     }
     .btn_header span{
         font-size: 100%;
     }
-    .first_window_list{
-        margin-left: 0px;
-    }
-    .second_window .liner{
-        display: none;
-    }
 
     .third{
         padding: 50px 0;
-    }
-    .third_video iframe{
-        margin: 54px 0;
+        &_video iframe{
+            margin: 54px 0;
+        }
     }
     .teachers{
         padding: 50px 0;
-    }
-    .teachers_descr{
-        font-size: 23px;
-    }
-    .teachers_items{
-        padding-top: 50px;
+        &_descr{
+            font-size: 23px;
+        }
+        &_items{
+            padding-top: 50px;
+        }
     }
 
     .price{
         padding: 50px 0;
-    }
-    .price_items{
-        margin-top: 50px;
+        &_items{
+            margin-top: 50px;
+        }
     }
     .btn_header_buy{
         width: 80%;
     }
-    .carusel_slider img{
-        width: 100%;
-    }
-    .carusel_slider .name{
-        font-size: 26px;
-    }
-    .carusel_slider .desr{
-        width: 90%;
-        font-size: 20px;
+    .carusel_slider {
+        img{
+            width: 100%;
+        }
+        .name{
+            font-size: 26px;
+        }
+        .desr{
+            width: 90%;
+            font-size: 20px;
+        }
     }
     .tns-nav{
         margin-top: 10px;
     }
 
-    .order .form input{
-        width: 100%;
-        
-    }
-    .order .form button{
-        width: 100%;      
-        margin-left: 50%;
-        transform: translateX(-50%);
-        font-size: 10px;
-       
-    }
-    .order .form input{
-        margin-left: 0;
-    }
-    .order .form{
-        width: 100%;
-        margin-left: 0%;
-        transform: translateX(0%);
-        margin-bottom: 50px ;
+    .order {
+        .form {
+            width: 100%;
+            margin-left: 0%;
+            transform: translateX(0%);
+            margin-bottom: 50px ;
+            input{
+                width: 100%;   
+                margin-left: 0; 
+                margin-left: 50%;
+            }
+            button{
+                width: 100%;      
+                margin-left: 50%;
+                transform: translateX(-50%);
+                font-size: 10px;
+               
+            }
+        }
     }
     .contacts{
         padding: 50px 0;
-    }
-    .contacts .soocial{
-        width: 100%;
-        margin-top: 40px;
-        
-    }
-    .contacts .map{
-        margin: -200px 0px 0 0;
+        .soocial{
+            width: 100%;
+            margin-top: 40px;
+        }
+        .map{
+            margin: -200px 0px 0 0;
+        }
     }
     .logo{
         margin-top: 340px;
@@ -453,35 +396,64 @@
         left: 84%;
         top: 20px;
     }
-    .menu_link{
-        font-size: 17px;
-    }
     .menu{
         width: 55%;
         background-color: rgba(0,0,0,0.7);
+        &_link{
+            font-size: 17px;
+        }
     }
-    .order .form input{
-        margin-left: 50%;
-    }
-    .form input{
-        width: 90%;
-        margin-left: 50%;
-        transform: translateX(-50%);
-    }
-    .form button{
-        width: 90%;
-        margin-left: 50%;
-        transform: translateX(-50%);
-    }
-    .form_overlay{
-        margin-right: 0;
+    .form {
+        margin-left: 0;
+        input{
+            width: 90%;
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+        button{
+            width: 90%;
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+        &_overlay{
+            margin-right: 0;
+        }
     }
     .overlay .modal__close{
         right: -20px;
     }
-    .form{
-        margin-left: 0;
-    }
     
+}
+@media ( max-width: 767px ){
+    .contacts .soocial{
+        margin-top: -75px;
+    }
+    .logo{
+        margin-top: 360px;
+    }
+}
+@media ( max-width: 454px ){
+    .logo{
+        margin-top: 340px;
+    }
+    .contacts{
+        padding: 50px 0;
+        .soocial{
+            width: 100%;
+            margin-top: 40px;
+        }
+        .map{
+            margin: -200px 0px 0 0;
+        }
+    }
+}
+@media ( max-width: 2115px ){
+    .price_item .price1{
+        font-size: 20px;
+    }
+    .price_midle{
+        margin-top: 20px;
+    }
+
 }
 

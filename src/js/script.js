@@ -74,16 +74,16 @@ window.addEventListener('DOMContentLoaded', () => {
       },
       messages: {
         name: {
-          required: "Введи погоняло індик",
-          minlength: jQuery.validator.format("клоун тре мінімум {0} букви")
+          required: "enter your name",
+          minlength: jQuery.validator.format("need minimum {0} leter")
         },
         phone:{
-          required: "Введи номер мудило",
-          minlength: jQuery.validator.format("салабон в тебе шо домашній тре мінімум {0} цифр")
+          required: "enter your phone",
+          minlength: jQuery.validator.format("need minimum {0} numbers")
         },
         email: {
-          required: "Введи мило лосю!",
-          email: "Банєку.. Ти тупий ? це не мило от мило - name@domain.com"
+          required: "enter your email",
+          email: " error   exsample - name@domain.com"
         }
       }
     

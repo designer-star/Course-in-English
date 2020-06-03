@@ -7,13 +7,14 @@
         justify-content: space-between;
     }
     &_item{
+        position: relative;
         transition: 0.8s all;
         animation-duration: 2s;
         border-radius: 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 30%;
+        width: 23%;
         max-height: 900px;
         text-align: center;
         border: 1px solid rgb(179, 140, 35);
@@ -34,21 +35,26 @@
             color: rgb(255, 255, 255);
             font-size: 20px;
             margin: 10% 5%;
+            padding-bottom: 40%;
         }
         .price1{
-            font-family: cormorant-garamond, serif;
-            font-weight: 300;
-            font-style: italic;
+            font-family: trajan-color,serif;
+            font-weight: 400;
+            font-style: normal;
             letter-spacing: 1.7px;
             color: rgb(214, 183, 44);
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 17%;
             font-size: 30px;
             text-align: center;
-            margin: 10%;
+        
         }
         button{
-           
-            margin-bottom: 5%;
-            margin-left: 50%;
+            position: absolute;
+            bottom: 2%;
+            left: 50%;
             transform: translateX(-50%);
         }
         img{
