@@ -1,7 +1,7 @@
 
 .second_window{
     min-height: 100%;
-    padding: 100px 0;
+    padding: 180px 0 100px 0;
     .button{
         margin-top: 740px;
     }
@@ -68,8 +68,9 @@
         margin-bottom: 40px;
         margin-top: 50px;
         &_1{
-            left: 50%;
             transform: translateX(-50%);
+            left: 50%;
+            
         }
         &_2{
             margin-top: 450px;

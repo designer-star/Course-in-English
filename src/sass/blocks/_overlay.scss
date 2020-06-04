@@ -11,6 +11,7 @@
         left: 50%;
         transform: translate(-50% , -50%);
         &__close{
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
             cursor: pointer;
             position: absolute;
             top: 0px;

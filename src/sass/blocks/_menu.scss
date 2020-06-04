@@ -12,6 +12,7 @@
     display: flex;
     justify-content: space-between;
     &_link{
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         font-family: trajan-color,serif;
         font-weight: 400;
         font-style: normal;
@@ -31,13 +32,13 @@
 
 }
 .up{
-
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     display: block;
     display: none;
     position: fixed;
     width: 90px;
     bottom: 40px;
-    right: 40px;
+    right: 0%;
     img{
         width: 100%;
         animation: shakingup 1s ease infinite;
@@ -47,6 +48,7 @@
 
 
 .dropdown {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     outline: none;
     background-color: rgba(60, 117, 62,0);
     position: absolute;

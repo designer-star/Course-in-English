@@ -73,6 +73,10 @@
         }
     }
 }
+.btn_it span{
+    font-size: 76%;
+    letter-spacing: 3.7px;
+}
 @media ( max-width: 1200px ){
     .price_items{
         flex-direction: column;

@@ -4,13 +4,14 @@
         margin: 0 auto;
     }
     .menu{
+        z-index: 3;
         flex-direction: column;
         position: fixed;
         justify-content: space-between;
         align-content: center;
         top: 0;
         left: -100%;
-        width: 18%;
+        width: 28%;
         height: 100%;
         padding: 20px 15px;
         
@@ -221,7 +222,7 @@
         top: -354px;
     }
     .contacts_wrapper{
-        font-size: 40px;
+        font-size: 30px;
         top: -40px;
         left: 0;
     }
@@ -374,7 +375,7 @@
         padding: 50px 0;
         .soocial{
             width: 100%;
-            margin-top: 40px;
+            margin-top: 30px;
         }
         .map{
             margin: -200px 0px 0 0;
@@ -384,7 +385,7 @@
         margin-top: 340px;
     }
     .up{
-        width: 12%;
+        width: 7%;
         bottom: 4%;
         right: 0%;
     }
@@ -397,7 +398,7 @@
         top: 20px;
     }
     .menu{
-        width: 55%;
+        width: 40%;
         background-color: rgba(0,0,0,0.7);
         &_link{
             font-size: 17px;
@@ -432,19 +433,44 @@
         margin-top: 360px;
     }
 }
+@media ( max-width: 520px ){
+    .menu{
+        width: 66%;
+    }
+}
 @media ( max-width: 454px ){
     .logo{
-        margin-top: 340px;
+        margin-top: -6px;
+        margin-bottom: 20px;
     }
     .contacts{
         padding: 50px 0;
         .soocial{
             width: 100%;
-            margin-top: 40px;
+            margin-top: 100px;
+        }
+        .logo .mine{
+            margin-top: -40px;
         }
         .map{
             margin: -200px 0px 0 0;
+            top: 70px;
         }
+    }
+    .about{
+        padding-top: 0;
+    }
+    .carusel_slider{
+        padding: 10px 0 0 0;
+    }
+    .second_window{
+        padding: 50px 0;
+    }
+    .order{
+        padding: 50px 0 0 0;
+    }
+    .contacts_wrapper{
+        font-size: 20px;
     }
 }
 @media ( max-width: 2115px ){

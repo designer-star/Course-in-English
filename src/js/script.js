@@ -14,8 +14,8 @@
   };
   /* $('input[name="phone"]').mask("+333(999) 999-999"); */
   $('[data-action="stop"]').fadeOut();
-  validateForms('.form');
-  validateForms('.form_overlay');
+  validateForms('#consultation form');
+  validateForms('#consultation-form');
 
   $('[data-modal=consultation]').on('click',function(){
     $('.overlay,#consultation').fadeIn('slow');
@@ -51,6 +51,24 @@ window.addEventListener('DOMContentLoaded', () => {
           menu.classList.toggle('menu_active');
       });
   });
+});
+new WOW().init();
+    //для відправки форми на пошту
+$('form').submit(function(e){
+  e.preventDefault(); //відміна стандартної поведінки браузера
+  $.ajax({
+    type: "POST",
+    url: "mailer/smart.php",
+    data: $(this).serialize()
+  }).done(function(){
+    $(this).find("input").val("");
+    $('#consultation , #order').fadeOut('slow');
+    $('.overlay,#thanks').fadeIn('slow');
+
+
+    $('form').trigger('reset');
+  });
+  return false;
 });
   
 
