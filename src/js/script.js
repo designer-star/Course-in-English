@@ -62,10 +62,8 @@ $('form').submit(function(e){
     data: $(this).serialize()
   }).done(function(){
     $(this).find("input").val("");
-    $('#consultation , #order').fadeOut('slow');
-    $('.overlay,#thanks').fadeIn('slow');
-
-
+    $('#consultation').fadeOut('slow');
+    $('.overlay , #thanks').fadeIn('slow');
     $('form').trigger('reset');
   });
   return false;
