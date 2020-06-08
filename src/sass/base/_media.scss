@@ -483,3 +483,19 @@
 
 }
 
+@media ( max-width: 1580px ){
+    .price_item .price_ru{
+        font-size: 14px;
+    }
+}
+@media ( max-width: 1200px ){
+    .price_item .price_ru{
+        font-size: 20px;
+    }
+}
+@media ( max-width: 360px ){
+    .price_item .price_ru{
+        font-size: 14px;
+    }
+}
+
